@@ -5,4 +5,5 @@ MAINTAINER sourced
 RUN mkdir -p /usr/src/app
 COPY . /usr/src/app
 WORKDIR /usr/src/app
+RUN lein install
 CMD ["lein", "run"]
